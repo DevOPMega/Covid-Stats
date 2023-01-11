@@ -1,0 +1,19 @@
+<%- include('header.ejs') %>
+
+<section class="section section-bg-homepage">
+    <div class="container">
+        <h1 class="heading">covid cases</h1>
+        <form class="form" action="/covid-stats" method="post" >
+            <p>Country</p>
+            <select class="select-box" name="countries" id="select-box">
+                <option value="Afghanistan">Afghanistan</option>
+
+            </select>
+            <input class="btn" type="submit" value="submit" />
+        </form>
+    </div>
+</section>
+
+<%- include('footer.ejs') %>
+
+

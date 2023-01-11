@@ -1,0 +1,22 @@
+<%- include('header.ejs') %>
+
+<section class="section section-bg-statistic">
+    <div class="container">
+        <h1 class="heading">covid cases</h1>
+        <div class="stats">
+            <h2><%= data.country %></h2>
+            <p class="results"><span>new case : </span><%= data.cases.new %></p>
+            <p class="results"><span>active case : </span><%= data.cases.active %></p>
+            <p class="results"><span>new death : </span><%= data.deaths.new %></p>
+            <p class="results"><span>total death : </span><%= data.deaths.total %></p>
+            <p class="results"><span>total tests : </span><%= data.tests.total %></p>
+        </div> 
+    </div>
+</section>
+
+<%- include('footer.ejs') %>
+
+
+
+ 
+

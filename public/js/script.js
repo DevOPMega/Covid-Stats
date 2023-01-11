@@ -2,7 +2,7 @@ const form = document.getElementsByTagName('form');
 const selectBox = document.querySelector('#select-box');
 
 const handleRequest = async () => {
-    const response = await fetch('http://localhost:5500/country');
+    const response = await fetch('https://covid-stats-8a9a.onrender.com/country');
     const data = await response.json();
     shownCountry(data.respond);    
 }
